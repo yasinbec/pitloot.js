@@ -1,0 +1,68 @@
+.tooltip-link {
+	border-bottom: $cialis-color dashed 1px;
+	color: $cialis-lightgray;
+	cursor: pointer;
+	padding-bottom: 0;
+	text-decoration: none;
+}
+
+.tooltip {
+  background: #fff;
+  border: 2px solid $cialis-color;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.3);
+  color: #666;
+  display: inline-block;
+  font-size: 14px;
+  font-stretch: condensed;
+  margin-top: 20px;
+  opacity: 0;
+  padding: 10px;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  text-decoration: none;
+  width: 300px;
+  z-index: 10;
+
+	strong {
+		color: $cialis-color;
+	}
+
+	&.active {
+		margin-top: 5px;
+		opacity: 1;
+	}
+
+	&.out {
+		margin-top: -20px;
+		opacity: 0;
+	}
+
+	.tooltip-arrow {
+	  bottom: -16px;
+	  height: 16px;
+	  left: 50%;
+	  margin-left: -35px;
+	  overflow: hidden;
+	  position: absolute;
+	  width: 70px;
+
+	  &:after {
+		  background: #fff;
+		  border: 2px solid $cialis-color;
+		  -moz-box-shadow: 6px 5px 9px -9px #000, 5px 6px 9px -9px #000;
+		  -webkit-box-shadow: 6px 5px 9px -9px #000, 5px 6px 9px -9px #000;
+		  box-shadow: 6px 5px 9px -9px #000, 5px 6px 9px -9px #000;
+		  content: '';
+		  height: 25px;
+		  left: 20px;
+		  position: absolute;
+		  top: -20px;
+		  -moz-transform: rotate(45deg);
+		  -ms-transform: rotate(45deg);
+		  -o-transform: rotate(45deg);
+		  -webkit-transform: rotate(45deg);
+		  width: 25px;
+		}
+	}
+}
