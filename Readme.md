@@ -3,6 +3,7 @@
 PitLoot JS
 
 Responsive tooltip jquery pluqing
+
 Dependency : modernizr (temp!!)
 
 ```
